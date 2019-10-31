@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BASZ | Home</title>
+<style>
+	@import url('main.css');
+	@import url('slish.css');
+  @import url('deal.css');
+  .t{
+    color: black;
+ font-weight:bold;
+ font-size: 22px;
+}
+
+.t1{
+ text-decoration: line-through;
+ font-weight:bold;
+ font-size: 18px;
+ color: black;
+}
+.t2{
+ color: green;
+ font-weight: bold;
+ font-size: 16px;
+}
+</style>
+</head>
+
+<body>
+
+ <div class="header">
+  <a href="#default" class="logo">BAS<span class="span">Z</span></a>
+  <div class="header-right">
+    <a class="active" href="main.html">Home</a>&nbsp;
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+    <a href="login.html">Login</a>
+    <a  href="signup.html">Signup</a>
+
+  </div>
+</div> 
+<div class="navbar">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="electro.html">Electronics</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="homeapp.html">Home Appliances</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="sports.html">Sports</a>
+</div>
+<br><br><br><br><br><br>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <a href="pro7.html"><img src="0.jpeg" style="width:100%"></a>
+  <div class="text">Experiance the ultra HD videos </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <a href="pro8.html"><img src="1.jpg" style="width:100%"></a>
+  <div class="text">Cooking becomes easy with our ovens</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <a href="sports.html"><img src="2.jpg" style="width:100%"></a>
+  <div class="text">Bye the sports equipments to keep your body fit.</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); 
+}
+</script>
+<div class="deal">Deal of the Day</div><br>
+<div class="deals">
+    <img src="pro4.png"> <div class="txxt1"><a href="pro4.html">Ziox Z301  (Coffee)</a><br>
+      <p style="color:black;">Highlights</p> <ul style="color: gray;">
+          <li>32 MB RAM | 32 MB ROM |</li>
+          <li>6.1 cm (2.4 inch) Display</li>
+          <li>0.3MP Rear Camera</li>
+          <li> 1800 mAh Battery</li>
+      </ul>
+  </p><span class="t">₹949</span>&nbsp;&nbsp;<span class="t1">₹1,499</span>&nbsp;&nbsp;<span class="t2">36% off</span></p><button class="btn"><a href="pro4.html">Buy This Product</a></button></p></div>
+    <br><hr><br>
+    <img src="pro3.png">  <div class="txxt2"><a href="pro3.html">Scuderia Ferrari-0830379 Smart Analog Watch - For Men</a><br> <p style="color:black;">Highlights</p> 
+       <ul style="color: gray;">
+        <li>50M Water Resistant</li>
+        <li>Long lasting battery</li>
+        <li>Stylish look</li>
+        <li>Dust resistance</li>
+    </ul>
+  </p><span class="t">₹7,625</span>&nbsp;&nbsp;<span class="t1">₹16,950</span>&nbsp;&nbsp;<span class="t2">55% off</span></p><button class="btn"><a href="pro3.html">Buy This Product</a></button></p></div>
+    <br><hr><br>
+    <img src="pro2.png"> <div class="txxt3"><a href="pro2.html">Samsung EVO Plus 32 GB MicroSDHC Class 10 95 MB/s Memory Card</a><br> <p style="color:black;">Highlights</p> 
+       <ul style="color: gray;">
+        <li>For Mobile</li>
+        <li>Capacity: 32 GB</li>
+        <li>MicroSDHC</li>
+        <li>Class 10</li>
+    </ul>
+  </p><span class="t">₹349</span>&nbsp;&nbsp;<span class="t1">₹999</span>&nbsp;&nbsp;<span class="t2">65% off</span></p><button class="btn"><a href="pro2.html">Buy This Product</a></button></p></div>
+</div>
+
+</div><br>
+<div class="testi"><h1>Customer's Testimonials</h1></div>
+<hr>
+<div class="custes">
+	<p>'Basz website is very user friendly and anyone <br>without some basic knowledge can use it <br>and buy product from it.' <span style="color: green;">- mehta mehen</span><br><br>
+    'It is a very good website to sell your <br>product by setting up your online store. <br>It offers many services for sellers <br>as well as for buyers.'<span style="color: green;"> - chandra kumar</span><br><br>
+    'Returning the products is very easy and <br>reliable in case of BASZ site.'<span style="color: green;"> - syrena</span><br><br>
+    'Exchage offers and emi plans <br>are very good here.'<span style="color: green;"> - santin</span><br>
+	<br>
+    'It is one of the best , safe <br>and reliable site to buy products with <br>quality bcoz quality is more important.'<br><span style="color: green;"> - Chupan Kumar</span>
+    <br>
+	</p>
+</div>
+<footer>
+<div class="footer">
+	<div class="fleft">©All Right Reserved</div>
+	<div class="fright"><a href='about.html'>About Us</a>&nbsp;&nbsp;<a href='privacy.html'>Privacy Policy</a>&nbsp;&nbsp;<a href='tos.html'>Terms of Services</a>&nbsp;&nbsp;<a href='faq.html'>FAQ</a>&nbsp;&nbsp;<a href='https://www.facebook.com/BASZ-102347804544029/?modal=admin_todo_tour'>Social Links</a></div>
+</div>
+</footer>
+</body>
+</html>

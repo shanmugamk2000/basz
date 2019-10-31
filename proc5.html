@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>product</title>
+<style>
+	@import url('main.css');
+	@import url('slish.css');
+	@import url('deal.css');
+    input[type='text'], textarea{
+    width: 98%;
+    padding: 12px;
+    border:0;
+  }
+  input[type='text']:hover{
+    border-top: 0px solid;
+    border-left: 0px solid;
+    border-right: 0px solid;
+    border-bottom: 1px solid black;
+  } 
+  textarea:hover{
+    border-top: 0px solid;
+    border-left: 0px solid;
+    border-right: 0px solid;
+    border-bottom: 1px solid black;
+  }
+  .posl{
+       position: fixed;
+       top:120px;
+       float: left;
+   }
+   .posm{
+       position: absolute;
+       top:30px;
+       left:500px;
+   }
+   .btn1 {
+  background-color: rgb(238, 191, 71);;
+  border: none;
+  color: rgb(228,26,26);
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 12px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  font-family: cursive;
+}
+
+.btn1:hover {
+  background-color: #3e8e41;
+  color: white;
+}
+.btn2 {
+  background-color: rgb(238, 191, 71);;
+  border: none;
+  color: rgb(228,26,26);
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 14px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  font-family: cursive;
+}
+
+.btn2:hover {
+  background-color: #3e8e41;
+  color: white;
+  font-family: cursive;
+}
+p{
+    font-family: cursive;
+    font-size: 17px;
+}
+.hh{
+  font-size: 25px;
+}
+</style>
+</head>
+
+<body>
+
+    <div class="header">
+        <a href="#default" class="logo">BAS<span class="span">Z</span></a>
+        <div class="header-right">
+          <a  href="main.html">Home</a>&nbsp;
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About</a>
+          <a class="active"  href="login.html">Login</a>
+    <a  href="signup.html">Signup</a>
+        </div>
+      </div> 
+      <div>
+            <div class="posl">
+    
+                    <img src="pro5.png"> 
+                    
+                    </div><div class="posm">
+      <table id="ide" align="center" style="width:500px; height:500px"; >
+          <form name="cart">
+             <tr><td colspan="2" align="center"><p class="hh">Checkout</p> </td></tr>
+              <tr><td><p>Name:</p></td><td><input type="text" name="cname"></td></tr>
+              <tr><td><p>Mobile no:</p></td><td><input type="text" name="mnumber"></td></tr>
+              <tr><td><p>E-mail</p></td><td><input type="text" name="ename"></td></tr>
+              <tr><td><p>Enetr house no:</p></td><td><input type="text" name="hname"></td></tr>
+              <tr><td><p>Enetr street name:</p></td><td><textarea rows=2 name="sname"></textarea></td></tr>
+              <tr><td><p>Enter city:</p></td><td><textarea roes=2 name="ctname"></textarea></td></tr>
+              <tr><td><p>Pincode:</p></td><td><input type="text" name="pname"></td></tr>
+              <tr><td><p>Enter the qunatity</p></td><td><input type="text" name="qname"></td></tr>
+              <tr><td><input type="button" onclick="f1()" class="btn1" value="GET AMOUT"></p></td><td align="center"></td></tr><br><br><br>
+              <tr><td colspan="2" align="center"><a class="btn2" href="pordered.html">Place Order</a></td></tr>
+              
+          </form>
+          </table></div></div>
+      <script>
+        function f1()
+        {
+          p=0;
+          var a=document.forms["cart"]["cname"].value;
+          var b=document.forms["cart"]["mnumber"].value;
+          var c=document.forms["cart"]["ename"].value;
+          var d=document.forms["cart"]["hname"].value;
+          var e=document.forms["cart"]["sname"].value;
+          var f=document.forms["cart"]["ctname"].value;
+          var g=document.forms["cart"]["pname"].value;
+          var h=document.forms["cart"]["qname"].value;
+          if(a=="")
+          {
+            alert("Please Enter Your Name !!!");
+            p=p+1;
+          }
+          if(b=="")
+          {
+            alert("Please Enter Your Mobile Number !!!");
+             p=p+1;
+          }if(c=="")
+          {
+            alert("Please Enter Your E-mail Address !!!");
+             p=p+1;
+          }if(d=="")
+          {
+            alert("Please Enter Your House Number !!!");
+             p=p+1;
+          }if(e=="")
+          {
+            alert("Please Enter Your Street Name !!!");
+             p=p+1;
+          }if(f=="")
+          {
+            alert("Please Enter Your City Name !!!");
+             p=p+1;
+          }if(g=="")
+          {
+            alert("Please Enter Your Pincode !!!");
+             p=p+1;
+          }if(h=="")
+          {
+            alert("Please Enter the Quantity !!!");
+             p=p+1;
+          }
+          if(p==0)
+          {
+            var hhh=Number(h);
+            var am=9999*hhh;
+            document.getElementById('ide').rows[9].cells[1].innerHTML=am;
+          }
+        }
+      </script>
+   </body></html>
